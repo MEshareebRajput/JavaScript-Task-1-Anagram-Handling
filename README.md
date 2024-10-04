@@ -2,16 +2,6 @@
 
 Welcome to the **JavaScript Task 1: Anagram Handling** repository! 🏢 This project demonstrates a JavaScript implementation of an anagram checker, showcasing various examples and explanations of anagrams. 🤔
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Understanding Anagrams](#understanding-anagrams)
-3. [How Anagrams Work](#how-anagrams-work)
-4. [JavaScript Implementation](#javascript-implementation)
-5. [Examples](#examples)
-6. [Usage Instructions](#usage-instructions)
-7. [Additional Resources](#additional-resources)
-8. [Contact Information](#contact-information)
-
 ## Project Overview 📚
 
 This repository contains:
