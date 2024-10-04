@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 1 (Anagram Handling)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Task 1: Anagram Handling in JavaScript</h1>
+    <div class="main-content">
+        <img src="./image/Muhammad Eshareeb.png" alt="Muhammad Eshareeb" class="profile-image">
+        <p class="personal-info">
+            <strong>Muhammad Eshareeb</strong><br>
+            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/muhammadeshareeb986/" target="_blank">LinkedIn</a><br>
+            <i class="fas fa-envelope"></i> <a href="mailto:muhammadeshareeb986@gmail.com">muhammadeshareeb986@gmail.com</a><br>
+            <i class="fas fa-phone"></i> 03282300151<br>
+            <i class="fab fa-whatsapp"></i> <a href="https://wa.me/923282300151" target="_blank">WhatsApp</a>
+        </p>
+        <h2 class="animated-heading">Understanding Anagrams in JavaScript</h2>
+        <p>
+            An <strong>anagram</strong> is a word or phrase that is formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. For example, the word "listen" can be rearranged to form the word "silent."
+        </p>
+        <p>
+            Anagrams are often used in word games and puzzles. They can be a fun way to challenge your mind and improve your vocabulary. For instance, the words "cinema" and "iceman" are also anagrams of each other.
+        </p>
+        <h3 class="animated-heading">How Anagrams Work</h3>
+        <p>
+            To determine whether two words are anagrams, you can follow these steps:
+        </p>
+        <ul>
+            <li>Convert both words to lowercase to ensure the comparison is case-insensitive.</li>
+            <li>Remove any spaces or punctuation (if you're comparing phrases).</li>
+            <li>Sort the letters of both words alphabetically.</li>
+            <li>Compare the sorted versions of the words. If they match, the words are anagrams.</li>
+        </ul>
+        <h3 class="animated-heading">Examples</h3>
+        <p>
+            Here are some examples of anagrams:
+        </p>
+        <ul>
+            <li><strong>“evil”</strong> and <strong>“vile”</strong></li>
+            <li><strong>“fluster”</strong> and <strong>“restful”</strong></li>
+            <li><strong>“rat”</strong> and <strong>“tar”</strong></li>
+        </ul>
+        <h2 class="animated-heading">JavaScript Implementation</h2>
+        <p>
+            Below is an example of JavaScript code that checks if two words are anagrams:
+        </p>
+        <pre>
+<code>
+function areAnagrams(word1, word2) {
+    let cleanedWord1 = word1.toLowerCase().split('').sort().join('');
+    let cleanedWord2 = word2.toLowerCase().split('').sort().join('');
+    return cleanedWord1 === cleanedWord2;
+}
+</code>
+        </pre>
+        <h2 class="animated-heading">Results</h2>
+        <div id="results" class="animated-border">
+            <h1>Results:</h1>
+            <p>Are "tea" and "eat" anagrams? true</p>
+            <p>Are "listen" and "silent" anagrams? true</p>
+            <p>Are "hello" and "world" anagrams? false</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Stay connected and keep learning!</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background: linear-gradient(135deg, #1a1a1a 25%, #292929 50%, #383838 75%);
+    margin: 0;
+    padding: 20px;
+    color: #e1e1e1;
+}
+
+h1 {
+    text-align: center;
+    color: #f9d74c;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    animation: bounce 1.5s infinite; /* Bouncing animation */
+}
+
+h2 {
+    font-size: 24px;
+    color: #f9d74c; /* Gold for h2 headings */
+    animation: bounce 1.5s infinite; /* Bouncing animation for h2 */
+    opacity: 0; /* Start with invisible */
+    animation-delay: 1s; /* Delay for h2 */
+    animation-fill-mode: forwards; /* Retain final state */
+}
+
+h3 {
+    font-size: 20px;
+    color: #f9d74c; /* Gold for h3 headings */
+    animation: bounce 1.5s infinite; /* Bouncing animation for h3 */
+}
+
+.main-content {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    animation: slideIn 1s ease-in-out forwards; /* Slide in animation */
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    animation: fadeIn 1s forwards; /* Fade in image animation */
+}
+
+.personal-info {
+    font-size: 18px;
+    color: #e1e1e1;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Fade in animation */
+}
+
+.personal-info a {
+    color: #f9d74c; /* Gold for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.personal-info a:hover {
+    color: #ffb84d; /* Light gold on hover */
+}
+
+.personal-info i {
+    color: #f9d74c; /* Gold for icons */
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.personal-info i:hover {
+    color: #ffb84d; /* Light gold on hover */
+}
+
+p {
+    font-size: 20px;
+    color: #e1e1e1; /* Light text color */
+    line-height: 1.6; /* Improved line height */
+    animation: fadeIn 2s ease-in-out forwards; /* Fade in animation */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #e1e1e1; /* Light text color */
+}
+
+/* Keyframes for animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move slightly up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Back to original position */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1; /* Fade in */
+    }
+}
